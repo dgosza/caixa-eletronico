@@ -1,5 +1,7 @@
 package br.com.bank.online;
 
+import java.util.Scanner;
+
 public class Notas {
 
     private static int notaCem, notaCinq, notaVinte, notaDez, notaCinco, notaDois;
@@ -26,12 +28,77 @@ public class Notas {
         System.out.println();
     }
 
+    public static void abastecerNotas(){
+
+        Scanner leia = new Scanner(System.in);
+
+        System.out.println("========================================");
+        System.out.println("======  ABASTECIMENTO DE NOTAS   =======");
+        System.out.println("========================================");
+
+        System.out.print("Digite quantas notas abastecer para R$100.00 => ");
+        Notas.setNotaCem(leia.nextInt());
+
+        System.out.print("Digite quantas notas abastecer para R$50.00 => ");
+        Notas.setNotaCinq(leia.nextInt());
+
+        System.out.print("Digite quantas notas abastecer para R$20.00 => ");
+        Notas.setNotaVinte(leia.nextInt());
+
+        System.out.print("Digite quantas notas abastecer para R$10.00 => ");
+        Notas.setNotaDez(leia.nextInt());
+
+        System.out.print("Digite quantas notas abastecer para R$5.00 => ");
+        Notas.setNotaCinco(leia.nextInt());
+
+        System.out.print("Digite quantas notas abastecer para R$2.00 => ");
+        Notas.setNotaDois(leia.nextInt());
+
+        leia.close();
+
+        System.out.println("VALOR ALTERADO!");
+        System.out.println("NOVOS VALORES");
+        Notas.notasDisponiveis();
+
+    }
+
+    public static void abastecerMoedas(){
+
+        Scanner leia = new Scanner(System.in);
+
+        System.out.println("========================================");
+        System.out.println("======  ABASTECIMENTO DE MOEDAS  =======");
+        System.out.println("========================================");
+
+        System.out.print("Digite quantas notas abastecer para R$1.00 => ");
+        Notas.setMoedaUm(leia.nextInt());
+
+        System.out.print("Digite quantas notas abastecer para R$0.50 => ");
+        Notas.setMoedaCinq(leia.nextInt());
+
+        System.out.print("Digite quantas notas abastecer para R$0.25 => ");
+        Notas.setMoedaVinteCinco(leia.nextInt());
+
+        System.out.print("Digite quantas notas abastecer para R$0.10 => ");
+        Notas.setMoedaDez(leia.nextInt());
+
+        System.out.print("Digite quantas notas abastecer para R$0.05 => ");
+        Notas.setMoedaCinco(leia.nextInt());
+
+        leia.close();
+
+        System.out.println("VALOR ALTERADO!");
+        System.out.println("NOVOS VALORES");
+        Notas.moedasDisponiveis();
+
+    }
+
     public static int getNotaCem() {
         return notaCem;
     }
 
     public static void setNotaCem(int notaCem) {
-        Notas.notaCem = notaCem;
+        Notas.notaCem =+ notaCem;
     }
 
     public static int getNotaCinq() {
@@ -39,7 +106,7 @@ public class Notas {
     }
 
     public static void setNotaCinq(int notaCinq) {
-        Notas.notaCinq = notaCinq;
+        Notas.notaCinq =+ notaCinq;
     }
 
     public static int getNotaVinte() {
@@ -47,7 +114,7 @@ public class Notas {
     }
 
     public static void setNotaVinte(int notaVinte) {
-        Notas.notaVinte = notaVinte;
+        Notas.notaVinte =+ notaVinte;
     }
 
     public static int getNotaDez() {
@@ -55,7 +122,7 @@ public class Notas {
     }
 
     public static void setNotaDez(int notaDez) {
-        Notas.notaDez = notaDez;
+        Notas.notaDez =+ notaDez;
     }
 
     public static int getNotaCinco() {
@@ -63,7 +130,7 @@ public class Notas {
     }
 
     public static void setNotaCinco(int notaCinco) {
-        Notas.notaCinco = notaCinco;
+        Notas.notaCinco =+ notaCinco;
     }
 
     public static int getNotaDois() {
@@ -71,7 +138,7 @@ public class Notas {
     }
 
     public static void setNotaDois(int notaDois) {
-        Notas.notaDois = notaDois;
+        Notas.notaDois =+ notaDois;
     }
 
     public static int getMoedaUm() {
@@ -79,7 +146,7 @@ public class Notas {
     }
 
     public static void setMoedaUm(int moedaUm) {
-        Notas.moedaUm = moedaUm;
+        Notas.moedaUm =+ moedaUm;
     }
 
     public static int getMoedaCinq() {
@@ -87,7 +154,7 @@ public class Notas {
     }
 
     public static void setMoedaCinq(int moedaCinq) {
-        Notas.moedaCinq = moedaCinq;
+        Notas.moedaCinq =+ moedaCinq;
     }
 
     public static int getMoedaVinteCinco() {
@@ -95,7 +162,7 @@ public class Notas {
     }
 
     public static void setMoedaVinteCinco(int moedaVinteCinco) {
-        Notas.moedaVinteCinco = moedaVinteCinco;
+        Notas.moedaVinteCinco =+ moedaVinteCinco;
     }
 
     public static int getMoedaDez() {
@@ -103,7 +170,7 @@ public class Notas {
     }
 
     public static void setMoedaDez(int moedaDez) {
-        Notas.moedaDez = moedaDez;
+        Notas.moedaDez =+ moedaDez;
     }
 
     public static int getMoedaCinco() {
@@ -111,6 +178,6 @@ public class Notas {
     }
 
     public static void setMoedaCinco(int moedaCinco) {
-        Notas.moedaCinco = moedaCinco;
+        Notas.moedaCinco =+ moedaCinco;
     }
 }

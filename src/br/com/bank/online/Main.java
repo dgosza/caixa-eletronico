@@ -16,20 +16,24 @@ public class Main {
         System.out.println("========================================");
         System.out.println();
         System.out.println(escolhaOperacao);
-        do{
+        while(repeat = true) {
             System.out.println("1 - LOGIN DO CLIENTE");
             System.out.println("2 - CADASTRAR CLIENTE");
             System.out.println("3 - LISTAR CLIENTES");
             System.out.println("4 - REABASTECER CAIXA ELETRONICO");
             int numberChoosen = leia.nextInt();
-            if(numberChoosen != 1 && numberChoosen != 2 && numberChoosen != 3 && numberChoosen !=4){
+
+            //DANDO ERRO NA LINHA ACIMA
+            //VER O NUMERO QUE RETORNA NO SOUT PARA RESOLUCAO
+
+            if (numberChoosen != 1 && numberChoosen != 2 && numberChoosen != 3 && numberChoosen != 4) {
                 Utilitarios.limpaTela();
                 System.out.println("OPÇAO INVALIDA");
                 System.out.println("ESCOLHA NOVAMENTE");
 
             }
-            switch (numberChoosen){
-                case 1 :
+            switch (numberChoosen) {
+                case 1:
                     break;
                 case 2:
                     break;
@@ -40,31 +44,44 @@ public class Main {
                     System.out.println("DIGITE AS CREDENCIAIS DE ACESSO AO CAIXA");
                     System.out.print("Código de Acesso: ");
                     int codigoAcesso = leia.nextInt();
+
                     System.out.print("Senha de Acesso: ");
                     int senhaAcesso = leia.nextInt();
-                    boolean verifica = Utilitarios.verificaAcessoAdmin(codigoAcesso, senhaAcesso);
 
-                    if(verifica == true){
+                    boolean verifica = Admin.verificaAcessoAdmin(codigoAcesso, senhaAcesso);
+
+                    if (verifica == true) {
                         System.out.println("LOGADO COM SUCESSO!!");
                         System.out.println("========================================");
                         System.out.println("====    SALDO DE MOEDAS DO CAIXA    ====");
                         System.out.println("========================================");
+
                         Notas.moedasDisponiveis();
                         Notas.notasDisponiveis();
+
                         System.out.println("O QUE DESEJA ABASTECER ?");
                         System.out.println(" 1 - NOTAS");
                         System.out.println(" 2 - MOEDAS");
-                        break;
-                    }else{
+                        int option= leia.nextInt();
+
+                        switch (option) {
+                            case 1:
+                                Notas.abastecerNotas();
+                                break;
+                            case 2:
+                                Notas.abastecerMoedas();
+                                break;
+                        }
+
+                    } else {
                         System.out.println("CREDENCIAIS INVALIDAS!");
                         System.out.println("TENTE NOVAMENTE MAIS TARDE");
                         break;
                     }
+                    break;
 
             }
-        }while(repeat = true);
-
-
+        }
 
         leia.close();
 
