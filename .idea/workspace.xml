@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c08c836-ce6b-48aa-9336-0d21563a2840" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Cartao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Credito.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Debito.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/Notas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/Notas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bank/online/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/Notas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bank/online/Notas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Cliente.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,30 +34,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/Cliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="12" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+            <state relative-caret-position="210">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
               <folding>
-                <element signature="e#924#925#0" expanded="true" />
-                <element signature="e#951#952#0" expanded="true" />
-                <element signature="e#991#992#0" expanded="true" />
-                <element signature="e#1023#1024#0" expanded="true" />
-                <element signature="e#1053#1054#0" expanded="true" />
-                <element signature="e#1079#1080#0" expanded="true" />
-                <element signature="e#1117#1118#0" expanded="true" />
-                <element signature="e#1147#1148#0" expanded="true" />
-                <element signature="e#1176#1177#0" expanded="true" />
-                <element signature="e#1201#1202#0" expanded="true" />
-                <element signature="e#1237#1238#0" expanded="true" />
-                <element signature="e#1265#1266#0" expanded="true" />
-                <element signature="e#1297#1298#0" expanded="true" />
-                <element signature="e#1325#1326#0" expanded="true" />
-                <element signature="e#1367#1368#0" expanded="true" />
-                <element signature="e#1401#1402#0" expanded="true" />
-                <element signature="e#1433#1434#0" expanded="true" />
-                <element signature="e#1461#1462#0" expanded="true" />
-                <element signature="e#1503#1504#0" expanded="true" />
-                <element signature="e#1537#1538#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Cartao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -177,7 +159,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563154519447" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563154710134" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -230,12 +212,13 @@
       <option name="presentableId" value="Default" />
       <updated>1562889434891</updated>
       <workItem from="1562889443004" duration="9068000" />
-      <workItem from="1563140538002" duration="13659000" />
+      <workItem from="1563140538002" duration="13950000" />
+      <workItem from="1563192976929" duration="248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22727000" />
+    <option name="totallyTimeSpent" value="23266000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -250,7 +233,7 @@
     <frame x="50" y="0" width="1870" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49863014" visible="true" weight="0.14010695" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49863014" visible="true" weight="0.14528508" />
       <window_info id="Structure" order="1" sideWeight="0.50136983" side_tool="true" weight="0.14364035" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -259,7 +242,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50136983" side_tool="true" weight="0.14364035" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49945176" visible="true" weight="0.21887967" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49945176" weight="0.22422954" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -267,7 +250,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.1530287" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.1530287" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50054824" side_tool="true" weight="0.22422954" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.19087137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -358,13 +341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Cartao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Credito.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -376,6 +352,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Cartao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -391,29 +374,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="12" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+        <state relative-caret-position="210">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding>
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#951#952#0" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
-            <element signature="e#1053#1054#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
-            <element signature="e#1147#1148#0" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
-            <element signature="e#1201#1202#0" expanded="true" />
-            <element signature="e#1237#1238#0" expanded="true" />
-            <element signature="e#1265#1266#0" expanded="true" />
-            <element signature="e#1297#1298#0" expanded="true" />
-            <element signature="e#1325#1326#0" expanded="true" />
-            <element signature="e#1367#1368#0" expanded="true" />
-            <element signature="e#1401#1402#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1461#1462#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#1537#1538#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,5 +1,9 @@
 package br.com.bank.online.cliente;
 
+import br.com.bank.online.cliente.cartao.Cartao;
+import br.com.bank.online.cliente.cartao.Credito;
+import br.com.bank.online.cliente.cartao.Debito;
+
 import java.util.Scanner;
 
 public class Cliente {
@@ -9,6 +13,9 @@ public class Cliente {
     private String rg;
     private String login;
     private String senha;
+    private Debito cartaoDebito;
+    private Credito cartaoCredito;
+
 
     public Cliente(String nome, String login, String senha) {
         this.nome = nome;
@@ -41,6 +48,10 @@ public class Cliente {
         boolean rep = true;
 
         do{
+            System.out.println(" 1 - Extrato Bancário");
+            System.out.println(" 2 - Saldo");
+            System.out.println(" 3 - Transferência");
+            System.out.println(" 4 - Saque");
 
         }while(rep == true);
 
