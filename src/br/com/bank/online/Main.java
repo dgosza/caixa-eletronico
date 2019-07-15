@@ -13,6 +13,12 @@ public class Main {
         int numberChoosen = 0;
         Cliente[] clientes = new Cliente[5];
 
+
+        {
+            clientes[0] = new Cliente("diego", "diego", "diego");
+        }
+
+
         //INICIO DO PROGRAMA
         System.out.println("========================================");
         System.out.println(" BEM VINDO AO CAIXA ELETRONICO BankOn");

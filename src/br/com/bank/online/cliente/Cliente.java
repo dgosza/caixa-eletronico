@@ -1,8 +1,11 @@
 package br.com.bank.online.cliente;
 
-import br.com.bank.online.cliente.cartao.Cartao;
+import br.com.bank.online.Utilitarios;
 import br.com.bank.online.cliente.cartao.Credito;
 import br.com.bank.online.cliente.cartao.Debito;
+import br.com.bank.online.cliente.conta.Corrente;
+import br.com.bank.online.cliente.conta.Poupanca;
+import jdk.jshell.execution.Util;
 
 import java.util.Scanner;
 
@@ -15,7 +18,9 @@ public class Cliente {
     private String senha;
     private Debito cartaoDebito;
     private Credito cartaoCredito;
-
+    private Corrente contaCorrente = new Corrente();
+    private Poupanca contaPoupanca;
+    private Saque saque;
 
     public Cliente(String nome, String login, String senha) {
         this.nome = nome;
@@ -43,6 +48,7 @@ public class Cliente {
     }
 
     public void menuCliente(){
+        Utilitarios.limpaTela();
         System.out.println("MENU DO CLIENTE "+this.nome+" NO BANK ONLINE!");
         Scanner leia = new Scanner(System.in);
         boolean rep = true;
@@ -50,8 +56,25 @@ public class Cliente {
         do{
             System.out.println(" 1 - Extrato Bancário");
             System.out.println(" 2 - Saldo");
-            System.out.println(" 3 - Transferência");
-            System.out.println(" 4 - Saque");
+            System.out.println(" 3 - Saque");
+            System.out.println(" 4 - Transferência");
+            System.out.println(" 5 - Sair");
+            int opcao = leia.nextInt();
+
+            switch (opcao){
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    contaCorrente.saqueConta();
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    rep = false;
+                    break;
+            }
 
         }while(rep == true);
 
@@ -96,5 +119,37 @@ public class Cliente {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public Debito getCartaoDebito() {
+        return cartaoDebito;
+    }
+
+    public void setCartaoDebito(Debito cartaoDebito) {
+        this.cartaoDebito = cartaoDebito;
+    }
+
+    public Credito getCartaoCredito() {
+        return cartaoCredito;
+    }
+
+    public void setCartaoCredito(Credito cartaoCredito) {
+        this.cartaoCredito = cartaoCredito;
+    }
+
+    public Corrente getContaCorrente() {
+        return contaCorrente;
+    }
+
+    public void setContaCorrente(Corrente contaCorrente) {
+        this.contaCorrente = contaCorrente;
+    }
+
+    public Poupanca getContaPoupanca() {
+        return contaPoupanca;
+    }
+
+    public void setContaPoupanca(Poupanca contaPoupanca) {
+        this.contaPoupanca = contaPoupanca;
     }
 }
