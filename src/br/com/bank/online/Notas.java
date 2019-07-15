@@ -54,8 +54,6 @@ public class Notas {
         System.out.print("Digite quantas notas abastecer para R$2.00 => ");
         Notas.setNotaDois(leia.nextInt());
 
-        leia.close();
-
         System.out.println("VALOR ALTERADO!");
         System.out.println("NOVOS VALORES");
         Notas.notasDisponiveis();
@@ -85,11 +83,49 @@ public class Notas {
         System.out.print("Digite quantas notas abastecer para R$0.05 => ");
         Notas.setMoedaCinco(leia.nextInt());
 
-        leia.close();
-
         System.out.println("VALOR ALTERADO!");
         System.out.println("NOVOS VALORES");
         Notas.moedasDisponiveis();
+
+    }
+
+    public static void menu(){
+        Scanner leia = new Scanner(System.in);
+        boolean rep = true;
+        System.out.println("LOGADO COM SUCESSO!!");
+        System.out.println("=========================");
+        System.out.println(" SALDO DE MOEDAS DO CAIXA");
+        System.out.println("=========================");
+
+        moedasDisponiveis();
+        notasDisponiveis();
+
+        do{
+            System.out.println("O QUE DESEJA FAZER ?");
+            System.out.println(" 1 - ABASTECER NOTAS");
+            System.out.println(" 2 - ABASTECER MOEDAS");
+            System.out.println(" 3 - SAIR");
+            int option = leia.nextInt();
+
+            if (option != 1 && option != 2 && option != 3) {
+                Utilitarios.limpaTela();
+                System.out.println("OPÇAO INVALIDA");
+                System.out.println("ESCOLHA NOVAMENTE");
+
+            }
+
+            switch (option) {
+                case 1:
+                    Notas.abastecerNotas();
+                    break;
+                case 2:
+                    Notas.abastecerMoedas();
+                    break;
+                case 3:
+                    rep = false;
+                    break;
+            }
+        }while (rep == true);
 
     }
 
