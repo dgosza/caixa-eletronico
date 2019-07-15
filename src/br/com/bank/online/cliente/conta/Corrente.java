@@ -1,35 +1,30 @@
 package br.com.bank.online.cliente.conta;
 
-import java.util.Scanner;
+public class Corrente extends Conta {
 
-public class Corrente extends Conta{
+    private double saldoConta = 6260;
+    private int numSaquesEfetuados;
 
-    private double saldoConta = 2560;
-
-    public double saque(double valorSaque){
-        return this.saldoConta=-valorSaque;
+    @Override
+    public double saque(double valorSaque) {
+        return this.saldoConta = this.saldoConta - valorSaque;
     }
 
+    @Override
     public void saqueConta() {
-        Scanner leia = new Scanner(System.in);
-        System.out.println("DIGITE O SALDO PARA O SAQUE");
-        double valor = leia.nextDouble();
-
-        double valorAnterior = getSaldoConta();
-        saque(valor);
-
-        System.out.println("Saldo Anterior: R$" + valorAnterior);
-        System.out.println("Saldo Restante: R$" + getSaldoConta());
-
-
+        super.saqueConta();
+        numSaquesEfetuados++;
+        System.out.println("Saques Realizados até o moment: "+this.numSaquesEfetuados);
     }
 
+    @Override
     public double getSaldoConta() {
-        return saldoConta;
+        return this.saldoConta;
     }
 
-    public void setSaldoConta(double saldoConta) {
-        this.saldoConta = saldoConta;
+    public int getNumSaquesEfetuados() {
+        return numSaquesEfetuados;
     }
+
 
 }

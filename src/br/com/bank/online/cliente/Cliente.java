@@ -3,6 +3,7 @@ package br.com.bank.online.cliente;
 import br.com.bank.online.Utilitarios;
 import br.com.bank.online.cliente.cartao.Credito;
 import br.com.bank.online.cliente.cartao.Debito;
+import br.com.bank.online.cliente.conta.Conta;
 import br.com.bank.online.cliente.conta.Corrente;
 import br.com.bank.online.cliente.conta.Poupanca;
 import jdk.jshell.execution.Util;
@@ -19,13 +20,16 @@ public class Cliente {
     private Debito cartaoDebito;
     private Credito cartaoCredito;
     private Corrente contaCorrente = new Corrente();
-    private Poupanca contaPoupanca;
-    private Saque saque;
+    private Poupanca contaPoupanca = new Poupanca();
 
     public Cliente(String nome, String login, String senha) {
         this.nome = nome;
         this.login = login;
         this.senha = senha;
+    }
+
+    public Cliente(){
+
     }
 
     @Override
@@ -67,7 +71,30 @@ public class Cliente {
                 case 2:
                     break;
                 case 3:
-                    contaCorrente.saqueConta();
+                    System.out.println("ATENÇÂO: LIMITE DE 5 SAQUES REALIZADOS POR DIA PARA CADA TIPO DE CONTA!");
+                    System.out.println("Escolha qual conta ira ser debitado o SAQUE");
+                    System.out.println(" 1 - CONTA CORRENTE");
+                    System.out.println(" 2 - CONTA POUPANÇA");
+                    opcao = leia.nextInt();
+
+                    switch (opcao) {
+                        case 1:
+                            if(getContaCorrente().getNumSaquesEfetuados() >= Conta.getLimiteDeSaques()){
+                                System.out.println("LIMITE DE "+ 5 + " SAQUES DIARIOS REALIZADOS");
+                                System.out.println("VOLTE UM OUTRO DIA");
+                            }else{
+                                getContaCorrente().saqueConta();
+                            }
+                            break;
+                        case 2:
+                            if(getContaPoupanca().getNumSaquesEfetuados() >= Conta.getLimiteDeSaques()){
+                                System.out.println("LIMITE DE "+ 5 + " SAQUES DIARIOS REALIZADOS");
+                                System.out.println("VOLTE UM OUTRO DIA");
+                            }else{
+                                getContaPoupanca().saqueConta();
+                            }
+                            break;
+                    }
                     break;
                 case 4:
                     break;
