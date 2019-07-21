@@ -45,28 +45,28 @@ Na classe Main, logo no inicio se encontra um array bidimensional onde pode ser 
 
 Usando o conceito de bloco de inicialização do java, iniciaremos nosso programa com alguns valores setados para moedas e notas.
 
-* Nota de R$100 : 200 Notas
+* Nota de **R$100** : 200 Notas
 
-* Nota de R$50  : 100 Notas
+* Nota de **R$50**  : 100 Notas
 
-* Nota de R$20  : 100 Notas
+* Nota de **R$20**  : 100 Notas
 
-* Nota de R$10  : 70 Notas
+* Nota de **R$10**  : 70 Notas
 
-* Nota de R$5   : 70 Notas
+* Nota de **R$5**   : 70 Notas
 
-* Nota de R$2   : 70 Notas
+* Nota de **R$2**   : 70 Notas
 
 
-* Moeda de R$1.00 : 100 Moeda
+* Moeda de **R$1.00** : 100 Moedas
 
-* Moeda de R$0.50 : 100 Moeda
+* Moeda de **R$0.50** : 100 Moedas
 
-* Moeda de R$0.25 : 100 Moeda
+* Moeda de **R$0.25** : 100 Moedas
 
-* Moeda de R$0.10 : 100 Moeda
+* Moeda de **R$0.10** : 100 Moedas
 
-* Moeda de R$0.05 : 100 Moeda
+* Moeda de **R$0.05** : 100 Moedas
 
 
 
