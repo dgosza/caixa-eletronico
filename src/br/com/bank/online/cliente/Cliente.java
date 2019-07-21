@@ -6,7 +6,6 @@ import br.com.bank.online.cliente.cartao.Debito;
 import br.com.bank.online.cliente.conta.Conta;
 import br.com.bank.online.cliente.conta.Corrente;
 import br.com.bank.online.cliente.conta.Poupanca;
-import jdk.jshell.execution.Util;
 
 import java.util.Scanner;
 
@@ -17,6 +16,7 @@ public class Cliente {
     private String rg;
     private String login;
     private String senha;
+
     private Debito cartaoDebito;
     private Credito cartaoCredito;
     private Corrente contaCorrente = new Corrente();
@@ -28,36 +28,32 @@ public class Cliente {
         this.senha = senha;
     }
 
-    public Cliente(){
-
-    }
-
     @Override
     public String toString() {
-        return "cliente{" +
-                "nome='" + nome + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", rg='" + rg + '\'' +
-                ", login='" + login + '\'' +
-                ", senha='" + senha + '\'' +
-                '}';
+        return
+                "Cliente: " + nome +
+                        ", CPF: " + cpf +
+                        ", RG: " + rg +
+                        ", Login: " + login +
+                        ", Senha: " + senha
+                ;
     }
 
-    public boolean validaCliente(String senha){
-        if(senha.equals(this.senha)){
+    public boolean validaCliente(String senha) {
+        if (senha.equals(this.senha)) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
 
-    public void menuCliente(){
+    public void menuCliente() {
         Utilitarios.limpaTela();
-        System.out.println("MENU DO CLIENTE "+this.nome+" NO BANK ONLINE!");
+        System.out.println("MENU DO CLIENTE " + this.nome + " NO BANK ONLINE!");
         Scanner leia = new Scanner(System.in);
         boolean rep = true;
 
-        do{
+        do {
             System.out.println(" 1 - Extrato Bancário");
             System.out.println(" 2 - Saldo");
             System.out.println(" 3 - Saque");
@@ -65,34 +61,49 @@ public class Cliente {
             System.out.println(" 5 - Sair");
             int opcao = leia.nextInt();
 
-            switch (opcao){
+            switch (opcao) {
                 case 1:
+                    System.out.println("EXTRATO DE SAQUES");
+                    System.out.println("CONTA CORRENTE");
+                    System.out.println("SAQUES EFETUADOS: " + getContaCorrente().getNumSaquesEfetuados());
+                    System.out.println("TOTAL EM R$: " + getContaCorrente().getValorTotalSaques());
+                    System.out.println();
+                    System.out.println("CONTA POUPANCA");
+                    System.out.println("SAQUES EFETUADOS: " + getContaPoupanca().getNumSaquesEfetuados());
+                    System.out.println("TOTAL EM R$: " + getContaPoupanca().getValorTotalSaques());
+
+                    //EXTRATO DE TRANSFERENCIA FAZER!!
                     break;
                 case 2:
+                    System.out.println("SALDO DA CONTA CORRENTE: R$" + getContaCorrente().getSaldoConta());
+                    System.out.println("SALDO DA CONTA POUPANCA: R$" + getContaPoupanca().getSaldoConta());
                     break;
                 case 3:
                     System.out.println("ATENÇÂO: LIMITE DE 5 SAQUES REALIZADOS POR DIA PARA CADA TIPO DE CONTA!");
                     System.out.println("Escolha qual conta ira ser debitado o SAQUE");
                     System.out.println(" 1 - CONTA CORRENTE");
                     System.out.println(" 2 - CONTA POUPANÇA");
+                    System.out.println(" 3 - SAIR");
                     opcao = leia.nextInt();
 
                     switch (opcao) {
                         case 1:
-                            if(getContaCorrente().getNumSaquesEfetuados() >= Conta.getLimiteDeSaques()){
-                                System.out.println("LIMITE DE "+ 5 + " SAQUES DIARIOS REALIZADOS");
+                            if (getContaCorrente().getNumSaquesEfetuados() >= Conta.getLimiteDeSaques()) {
+                                System.out.println("LIMITE DE " + Conta.getLimiteDeSaques() + " SAQUES DIARIOS REALIZADOS");
                                 System.out.println("VOLTE UM OUTRO DIA");
-                            }else{
+                            } else {
                                 getContaCorrente().saqueConta();
                             }
                             break;
                         case 2:
-                            if(getContaPoupanca().getNumSaquesEfetuados() >= Conta.getLimiteDeSaques()){
-                                System.out.println("LIMITE DE "+ 5 + " SAQUES DIARIOS REALIZADOS");
+                            if (getContaPoupanca().getNumSaquesEfetuados() >= Conta.getLimiteDeSaques()) {
+                                System.out.println("LIMITE DE " + Conta.getLimiteDeSaques() + " SAQUES DIARIOS REALIZADOS");
                                 System.out.println("VOLTE UM OUTRO DIA");
-                            }else{
+                            } else {
                                 getContaPoupanca().saqueConta();
                             }
+                            break;
+                        case 3:
                             break;
                     }
                     break;
@@ -103,7 +114,7 @@ public class Cliente {
                     break;
             }
 
-        }while(rep == true);
+        } while (rep == true);
 
     }
 

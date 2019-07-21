@@ -7,34 +7,30 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        //DECLARATION OF VARIABLES AND STUFFS
-        String escolhaOperacao = "ESCOLHA A OPERACÃO QUE DESEJA REALIZAR";
         boolean repeat = true;
-        int numberChoosen = 0;
+        //Numero de cadastros permitidos no sistema abaixo  - MUDAR O VALRO DO ARRAY PARA A TROCA
         Cliente[] clientes = new Cliente[5];
-
 
         {
             clientes[0] = new Cliente("diego", "diego", "diego");
         }
 
-
         //INICIO DO PROGRAMA
         System.out.println("========================================");
-        System.out.println(" BEM VINDO AO CAIXA ELETRONICO BankOn");
+        System.out.println(" BEM VINDO AO CAIXA ELETRONICO BANKON");
         System.out.println("========================================");
         System.out.println();
-        System.out.println(escolhaOperacao);
+        System.out.println("ESCOLHA A OPERAÇAO QUE DESEJA REALIZAR");
 
-        do{
+        do {
             Scanner leia = new Scanner(System.in);
             System.out.println("1 - LOGIN DO CLIENTE");
             System.out.println("2 - CADASTRAR CLIENTE");
             System.out.println("3 - LISTAR CLIENTES");
-            System.out.println("4 - REABASTECER CAIXA ELETRONICO");
+            System.out.println("4 - CAIXA ELETRONICO");
             System.out.println("5 - SAIR");
 
-            numberChoosen = leia.nextInt();
+            int numberChoosen = leia.nextInt();
 
             if (numberChoosen != 1 && numberChoosen != 2 && numberChoosen != 3 && numberChoosen != 4 && numberChoosen != 5) {
                 Utilitarios.limpaTela();
@@ -45,12 +41,14 @@ public class Main {
 
             switch (numberChoosen) {
                 case 1:
+                    Utilitarios.limpaTela();
+                    System.out.println("LOGIN DO CLIENTE");
                     int count = 0;
-                    for(Cliente cliente : clientes){
-                        if(cliente != null){
-                            System.out.println("Posição: "+count+": "+cliente);
+                    for (Cliente cliente : clientes) {
+                        if (cliente != null) {
+                            System.out.println("Posição: " + count + " - " + cliente);
                             count++;
-                        }else{
+                        } else {
                             System.out.println("NÃO HA NENHUM CLIENTE CADASTRADO NESTA POSIÇÃO");
 
                         }
@@ -58,39 +56,45 @@ public class Main {
 
                     System.out.println("Digite a posição referente ao seu login ou digite '05' para sair");
                     int posicaoLogin = leia.nextInt();
-                    if(posicaoLogin == 05){
+                    if (posicaoLogin == 05) {
+                        break;
+                    } else if (posicaoLogin != 05 && posicaoLogin != 0 && posicaoLogin != 1 && posicaoLogin != 2 && posicaoLogin != 3
+                            && posicaoLogin != 4) {
+                        System.out.println("POSIÇÃO INVALIDA");
+                        System.out.println("TENTE NOVAMENTE MAIS TARDE");
+                        System.out.println();
+                        break;
+                    } else {
+                        System.out.println("Login: " + clientes[posicaoLogin].getLogin());
+                        System.out.println("Digite a senha para a conta acima");
+                        System.out.print("Senha: ");
+                        String senhaLogin = leia.next();
+
+                        boolean verifica = clientes[posicaoLogin].validaCliente(senhaLogin);
+
+                        if (verifica == true) {
+                            clientes[posicaoLogin].menuCliente();
+                        } else {
+                            System.out.println("Login invalido");
+                            System.out.println("Tente novamente mais tarde");
+                        }
                         break;
                     }
-                    System.out.println("Login: "+clientes[posicaoLogin].getLogin());
-                    System.out.println("Digite a senha para a conta acima");
-                    System.out.print("Senha: ");
-                    String senhaLogin = leia.next();
-
-                    boolean verifica = clientes[posicaoLogin].validaCliente(senhaLogin);
-
-                    if(verifica == true){
-                        clientes[posicaoLogin].menuCliente();
-                    }else{
-                        System.out.println("Login invalido");
-                        System.out.println("Tente novamente mais tarde");
-                    }
-
-                    break;
                 case 2:
                     Utilitarios.limpaTela();
                     System.out.println("CADASTRO DE CLIENTES DO CAIXA ELETRONICO");
                     int countVagas = 0;
-                    for(Cliente cliente : clientes){
-                        if(cliente == null){
-                            countVagas ++;
+                    for (Cliente cliente : clientes) {
+                        if (cliente == null) {
+                            countVagas++;
                         }
                     }
-                    System.out.println("NUMERO MAXIMO DE CLIENTES CADASTRADOS NO SISTEMA: 5");
-                    System.out.println("TEMOS "+countVagas+" CADASTROS VAGOS");
+                    System.out.println("NUMERO MAXIMO DE CLIENTES CADASTRADOS NO SISTEMA: " + clientes.length);
+                    System.out.println("TEMOS " + countVagas + " CADASTROS VAGOS");
 
-                    if(countVagas <= 0){
+                    if (countVagas <= 0) {
                         System.out.println("NÃO SERA POSSIVEL CADASTRAR POIS EXCEDEU O LIMITE DE CADASTROS NO SISTEMA");
-                    }else{
+                    } else {
                         System.out.println("Digite o nome do cliente a ser cadastrado");
                         String nome = leia.next();
 
@@ -100,8 +104,8 @@ public class Main {
                         System.out.println("Digite a senha a ser utilizada");
                         String senha = leia.next();
 
-                        for(int i = 0; i<=clientes.length; i++){
-                            if(clientes[i] == null){
+                        for (int i = 0; i <= clientes.length; i++) {
+                            if (clientes[i] == null) {
                                 clientes[i] = new Cliente(nome, login, senha);
                                 break;
                             }
@@ -111,13 +115,17 @@ public class Main {
 
                     break;
                 case 3:
-                    for(Cliente cliente : clientes){
-                        if(cliente != null){
+                    Utilitarios.limpaTela();
+                    System.out.println("LISTAGEM DE CLIENTES");
+                    for (Cliente cliente : clientes) {
+                        if (cliente != null) {
                             System.out.println(cliente);
-                        }else{
+                        } else {
                             System.out.println("VAGO");
+
                         }
                     }
+                    System.out.println();
                     break;
                 case 4:
                     Utilitarios.limpaTela();
@@ -142,9 +150,7 @@ public class Main {
                     repeat = false;
                     break;
             }
-
-        }while(repeat == true);
-
+        } while (repeat == true);
 
     }
 }

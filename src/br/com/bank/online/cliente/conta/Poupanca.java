@@ -1,30 +1,63 @@
 package br.com.bank.online.cliente.conta;
 
+import br.com.bank.online.Utilitarios;
+
 public class Poupanca extends Conta {
 
-    private double saldoConta = 1260;
-    private int numSaquesEfetuados;
+    {
+        super.setSaldoConta(7800);
+    }
 
     @Override
     public double saque(double valorSaque) {
-        return this.saldoConta = this.saldoConta - valorSaque;
+        return super.saque(valorSaque);
     }
 
     @Override
     public void saqueConta() {
+        Utilitarios.limpaTela();
+        System.out.println("SAQUE EM CONTA POUPANÇA");
+        System.out.println();
         super.saqueConta();
-        numSaquesEfetuados++;
-        System.out.println("Saques Realizados até o moment: "+this.numSaquesEfetuados);
     }
 
     @Override
     public double getSaldoConta() {
-        return this.saldoConta;
+        return super.getSaldoConta();
     }
 
+    @Override
+    public void setSaldoConta(double saldoConta) {
+        super.setSaldoConta(saldoConta);
+    }
+
+    @Override
+    public double getValorTotalSaques() {
+        return super.getValorTotalSaques();
+    }
+
+    @Override
+    public void setValorTotalSaques(double valorTotalSaques) {
+        super.setValorTotalSaques(valorTotalSaques);
+    }
+
+    @Override
     public int getNumSaquesEfetuados() {
-        return numSaquesEfetuados;
+        return super.getNumSaquesEfetuados();
     }
 
-
+    @Override
+    public void setNumSaquesEfetuados(int numSaquesEfetuados) {
+        super.setNumSaquesEfetuados(numSaquesEfetuados);
+    }
 }
+
+
+
+
+
+
+
+
+
+
