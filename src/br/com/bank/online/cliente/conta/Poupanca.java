@@ -2,7 +2,10 @@ package br.com.bank.online.cliente.conta;
 
 import br.com.bank.online.Utilitarios;
 
+import java.util.Random;
+
 public class Poupanca extends Conta {
+
 
     {
         super.setSaldoConta(7800);
@@ -50,6 +53,37 @@ public class Poupanca extends Conta {
     public void setNumSaquesEfetuados(int numSaquesEfetuados) {
         super.setNumSaquesEfetuados(numSaquesEfetuados);
     }
+
+    @Override
+    public int getNumeroConta() {
+        return super.getNumeroConta();
+    }
+
+    @Override
+    public void setNumeroConta() {
+        super.setNumeroConta();
+    }
+
+    @Override
+    public int getTransferenciasRealizadas() {
+        return super.getTransferenciasRealizadas();
+    }
+
+    @Override
+    public void setTransferenciasRealizadas(int transferenciasRealizadas) {
+        super.setTransferenciasRealizadas(transferenciasRealizadas);
+    }
+
+    @Override
+    public double getTotalTransferenciasRealizadas() {
+        return super.getTotalTransferenciasRealizadas();
+    }
+
+    @Override
+    public void setTotalTransferenciasRealizadas(double totalTransferenciasRealizadas) {
+        super.setTotalTransferenciasRealizadas(totalTransferenciasRealizadas);
+    }
+
 }
 
 

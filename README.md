@@ -68,6 +68,24 @@ Usando o conceito de bloco de inicialização do java, iniciaremos nosso program
 
 * Moeda de **R$0.05** : 100 Moedas
 
+### Limite de saques 
+
+O limite de saques para cada conta é de 5. Caso queira mudar o valor, vá na classe Conta e altere o valor.
+
+```private static final double LIMITE_DE_SAQUES = 5;```
+
+### Herança nas classes
+
+As classes de Corrente e Poupança são heranças da classe de Conta. Qualquer alteração que quiser realizar nas mesmas, acesse a classe Conta.
+
+Toda conta corrente será iniciada com um valor de saldo de R$2500 e de conta poupança um valor de R$7.800
+
+
+### Transferencia entre objetos cadastrados no sistema
+
+Para a operação de Transferencia de dinheiro, é disponibilizado as contas cadastradas dentro do sistema.
+
+Para fazer tal transferencia, basta digitar o tipo de conta que será debitado o saldo e o tipo de conta do beneficiario e o numero da conta. Assim que a operação for concluida, o saldo sera debitado da sua conta e transferido ao outro cliente dentro do sistema.
 
 
 

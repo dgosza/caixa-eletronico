@@ -2,6 +2,7 @@ package br.com.bank.online.cliente.conta;
 
 import br.com.bank.online.Notas;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public abstract class Conta {
@@ -10,6 +11,14 @@ public abstract class Conta {
     private double valorTotalSaques;
     private int numSaquesEfetuados;
     private double saldoConta;
+    private int numeroConta;
+    private int transferenciasRealizadas;
+    private double totalTransferenciasRealizadas;
+
+    {
+        setNumeroConta();
+    }
+
 
     public double saque(double valorSaque) {
         return this.saldoConta = this.saldoConta - valorSaque;
@@ -49,7 +58,7 @@ public abstract class Conta {
     }
 
     public void setSaldoConta(double saldoConta) {
-        this.saldoConta = saldoConta;
+        this.saldoConta += saldoConta;
     }
 
     public double getValorTotalSaques() {
@@ -67,4 +76,29 @@ public abstract class Conta {
     public void setNumSaquesEfetuados(int numSaquesEfetuados) {
         this.numSaquesEfetuados = this.numSaquesEfetuados = numSaquesEfetuados;
     }
+
+    public int getNumeroConta() {
+        return numeroConta;
+    }
+
+    public void setNumeroConta() {
+        this.numeroConta = new Random().nextInt(700) + 1;
+    }
+
+    public int getTransferenciasRealizadas() {
+        return transferenciasRealizadas;
+    }
+
+    public void setTransferenciasRealizadas(int transferenciasRealizadas) {
+        this.transferenciasRealizadas += transferenciasRealizadas;
+    }
+
+    public double getTotalTransferenciasRealizadas() {
+        return totalTransferenciasRealizadas;
+    }
+
+    public void setTotalTransferenciasRealizadas(double totalTransferenciasRealizadas) {
+        this.totalTransferenciasRealizadas += totalTransferenciasRealizadas;
+    }
+
 }

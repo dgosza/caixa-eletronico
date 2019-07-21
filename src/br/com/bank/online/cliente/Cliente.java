@@ -7,7 +7,6 @@ import br.com.bank.online.cliente.cartao.Debito;
 import br.com.bank.online.cliente.conta.Conta;
 import br.com.bank.online.cliente.conta.Corrente;
 import br.com.bank.online.cliente.conta.Poupanca;
-import jdk.swing.interop.SwingInterOpUtils;
 
 import java.util.Scanner;
 
@@ -28,6 +27,10 @@ public class Cliente extends Main {
         this.nome = nome;
         this.login = login;
         this.senha = senha;
+    }
+
+    public Cliente() {
+
     }
 
     @Override
@@ -74,12 +77,22 @@ public class Cliente extends Main {
                     System.out.println("CONTA POUPANCA");
                     System.out.println("SAQUES EFETUADOS: " + getContaPoupanca().getNumSaquesEfetuados());
                     System.out.println("TOTAL EM R$: " + getContaPoupanca().getValorTotalSaques());
+                    System.out.println();
+                    System.out.println();
+                    System.out.println("EXTRATO DE TRANSFERENCIAS");
+                    System.out.println("CONTA CORRENTE");
+                    System.out.println("TOTAL DE TRANSFERENCIAS REALIZADAS: "+getContaCorrente().getTransferenciasRealizadas());
+                    System.out.println("TOTAL EM R$ EM TRANSFERENCIAS: R$"+getContaCorrente().getTotalTransferenciasRealizadas());
+                    System.out.println("CONTA POUPANÇA");
+                    System.out.println("TOTAL DE TRANSFERENCIAS REALIZADAS: "+getContaPoupanca().getTransferenciasRealizadas());
+                    System.out.println("TOTAL EM R$ EM TRANSFERENCIAS: R$"+getContaPoupanca().getTotalTransferenciasRealizadas());
+                    System.out.println();
+                    System.out.println();
 
-                    //EXTRATO DE TRANSFERENCIA FAZER!!
                     break;
                 case 2:
-                    System.out.println("SALDO DA CONTA CORRENTE: R$" + getContaCorrente().getSaldoConta());
-                    System.out.println("SALDO DA CONTA POUPANCA: R$" + getContaPoupanca().getSaldoConta());
+                    System.out.println("SALDO DA CONTA CORRENTE: R$" + getContaCorrente().getSaldoConta() + " Número da conta: " + getContaCorrente().getNumeroConta());
+                    System.out.println("SALDO DA CONTA POUPANCA: R$" + getContaPoupanca().getSaldoConta() + " Número da conta: " + getContaPoupanca().getNumeroConta());
                     break;
                 case 3:
                     System.out.println("ATENÇÂO: LIMITE DE 5 SAQUES REALIZADOS POR DIA PARA CADA TIPO DE CONTA!");
@@ -112,22 +125,83 @@ public class Cliente extends Main {
                     break;
                 case 4:
                     Utilitarios.limpaTela();
-                    System.out.println("TRANSFERENCIA ENTRE CONTAS");
-                    System.out.println("Escolha a conta abaixo para qual voce quer transferir o dinheiro");
+                    System.out.println("Saldo em Conta Corrente: R$" + getContaCorrente().getSaldoConta());
+                    System.out.println("Saldo em Conta Poupança: R$" + getContaPoupanca().getSaldoConta());
+                    System.out.println("Digite em qual tipo de conta irá ser debitado o valor");
+                    System.out.println(" 1 - CONTA CORRENTE");
+                    System.out.println(" 2 - CONTA POUPANÇA");
+                    opcao = leia.nextInt();
 
-                    for (Cliente cliente : Main.getClientes()) {
-                        if (cliente != null) {
-                            System.out.println(cliente);
-                        }
+                    switch (opcao) {
+                        case 1:
+                            Transferencia.mostraContasParaTransferencia();
+
+                            System.out.println("Digite qual o tipo de conta do beneficiario que irá RECEBER a transferencia e o numero da conta");
+                            System.out.println(" 1 - CONTA CORRENTE");
+                            System.out.println(" 2 - CONTA POUPANÇA");
+                            System.out.print("TIPO DE CONTA: ");
+                            int conta = leia.nextInt();
+
+                            System.out.print("NUMERO DA CONTA: ");
+                            int numeroConta = leia.nextInt();
+
+                            System.out.println("Digite a quantidade a ser transferida");
+                            double valor = leia.nextDouble();
+
+                            if (valor <= 0 || valor > getContaCorrente().getSaldoConta()) {
+                                System.out.println("SALDO INVALIDO PARA TRANSFERENCIA");
+                                System.out.println("TENTE NOVAMENTE MAIS TARDE");
+                            } else {
+
+                                double valorAnterior = getContaCorrente().getSaldoConta();
+                                getContaCorrente().saque(valor);
+                                Transferencia.transfereSaldo(valor, conta, numeroConta);
+                                getContaCorrente().setTransferenciasRealizadas(1);
+                                getContaCorrente().setTotalTransferenciasRealizadas(valor);
+
+                                System.out.println("Saldo Anterior: R$" + valorAnterior);
+                                System.out.println("Saldo Solicitado: R$" + valor);
+                                System.out.println("Saldo Restante: R$" + getContaCorrente().getSaldoConta());
+                            }
+
+                            break;
+                        case 2:
+                            Transferencia.mostraContasParaTransferencia();
+
+                            System.out.println("Digite qual o tipo de conta do beneficiario que irá RECEBER a transferencia e o numero da conta");
+                            System.out.println(" 1 - CONTA CORRENTE");
+                            System.out.println(" 2 - CONTA POUPANÇA");
+                            System.out.print("TIPO DE CONTA: ");
+                            conta = leia.nextInt();
+
+                            System.out.print("NUMERO DA CONTA: ");
+                            numeroConta = leia.nextInt();
+
+                            System.out.println("Digite a quantidade a ser transferida");
+                            valor = leia.nextDouble();
+
+                            if (valor <= 0 || valor > getContaPoupanca().getSaldoConta()) {
+                                System.out.println("SALDO INVALIDO PARA TRANSFERENCIA");
+                                System.out.println("TENTE NOVAMENTE MAIS TARDE");
+                            } else {
+
+                                double valorAnterior = getContaPoupanca().getSaldoConta();
+                                getContaPoupanca().saque(valor);
+
+                                Transferencia.transfereSaldo(valor, conta, numeroConta);
+                                getContaPoupanca().setTransferenciasRealizadas(1);
+                                getContaPoupanca().setTotalTransferenciasRealizadas(valor);
+
+                                System.out.println("Saldo Anterior: R$" + valorAnterior);
+                                System.out.println("Saldo Solicitado: R$" + valor);
+                                System.out.println("Saldo Restante: R$" + getContaCorrente().getSaldoConta());
+                            }
+                            break;
                     }
-
-                    //FAZER A TRANSAÇÃO DE DINHEIRO ENTRE OBJETOS DE CLIENTE DIFERENTE
-                    //HEHE!
-
                     break;
                 case 5:
                     Utilitarios.limpaTela();
-                    System.out.println("EDITAR DADOS DO CLIENTE "+getNome());
+                    System.out.println("EDITAR DADOS DO CLIENTE " + getNome());
                     break;
                 case 6:
                     rep = false;
@@ -210,4 +284,6 @@ public class Cliente extends Main {
     public void setContaPoupanca(Poupanca contaPoupanca) {
         this.contaPoupanca = contaPoupanca;
     }
+
+
 }

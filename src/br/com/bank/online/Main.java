@@ -12,6 +12,7 @@ public class Main {
     //PROGRAMA INICIA JA COM UM CADASTRO, EVITANDO ASSIM O WORKFLOW REPETITIVO
     static {
         clientes[0] = new Cliente("diego", "diego", "diego");
+        clientes[1] = new Cliente("nat", "nat", "nat");
     }
 
     public static Cliente[] getClientes() {
