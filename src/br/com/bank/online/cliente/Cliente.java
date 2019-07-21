@@ -1,15 +1,17 @@
 package br.com.bank.online.cliente;
 
+import br.com.bank.online.Main;
 import br.com.bank.online.Utilitarios;
 import br.com.bank.online.cliente.cartao.Credito;
 import br.com.bank.online.cliente.cartao.Debito;
 import br.com.bank.online.cliente.conta.Conta;
 import br.com.bank.online.cliente.conta.Corrente;
 import br.com.bank.online.cliente.conta.Poupanca;
+import jdk.swing.interop.SwingInterOpUtils;
 
 import java.util.Scanner;
 
-public class Cliente {
+public class Cliente extends Main {
 
     private String nome;
     private String cpf;
@@ -58,6 +60,7 @@ public class Cliente {
             System.out.println(" 2 - Saldo");
             System.out.println(" 3 - Saque");
             System.out.println(" 4 - Transferência");
+            System.out.println(" 5 - Editar Dados");
             System.out.println(" 5 - Sair");
             int opcao = leia.nextInt();
 
@@ -108,8 +111,25 @@ public class Cliente {
                     }
                     break;
                 case 4:
+                    Utilitarios.limpaTela();
+                    System.out.println("TRANSFERENCIA ENTRE CONTAS");
+                    System.out.println("Escolha a conta abaixo para qual voce quer transferir o dinheiro");
+
+                    for (Cliente cliente : Main.getClientes()) {
+                        if (cliente != null) {
+                            System.out.println(cliente);
+                        }
+                    }
+
+                    //FAZER A TRANSAÇÃO DE DINHEIRO ENTRE OBJETOS DE CLIENTE DIFERENTE
+                    //HEHE!
+
                     break;
                 case 5:
+                    Utilitarios.limpaTela();
+                    System.out.println("EDITAR DADOS DO CLIENTE "+getNome());
+                    break;
+                case 6:
                     rep = false;
                     break;
             }

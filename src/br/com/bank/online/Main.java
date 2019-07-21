@@ -5,15 +5,22 @@ import br.com.bank.online.cliente.Cliente;
 import java.util.Scanner;
 
 public class Main {
+
+    //NUMERO DE CLIENTES PERMITIDOS NO SISTEMA
+    static Cliente[] clientes = new Cliente[5];
+
+    //PROGRAMA INICIA JA COM UM CADASTRO, EVITANDO ASSIM O WORKFLOW REPETITIVO
+    static {
+        clientes[0] = new Cliente("diego", "diego", "diego");
+    }
+
+    public static Cliente[] getClientes() {
+        return clientes;
+    }
+
     public static void main(String[] args) {
 
         boolean repeat = true;
-        //Numero de cadastros permitidos no sistema abaixo  - MUDAR O VALRO DO ARRAY PARA A TROCA
-        Cliente[] clientes = new Cliente[5];
-
-        {
-            clientes[0] = new Cliente("diego", "diego", "diego");
-        }
 
         //INICIO DO PROGRAMA
         System.out.println("========================================");
@@ -151,6 +158,8 @@ public class Main {
                     break;
             }
         } while (repeat == true);
+
+
 
     }
 }
