@@ -2,7 +2,7 @@
 
 Fiz este sistema com o intuito de demonstrar e testar meus conhecimentos obtidos em java poo até o momento. 
 
-Usando conceitos como Heranca, Classes Abstratas, sobreescrita de metodos, if else, for e foreach, arrays bidimensionais, encapsulamento, atributos finais e static.
+Usando conceitos como Heranca, Classes Abstratas, sobreescrita de metodos, if else, for e foreach, arrays bidimensionais, encapsulamento, atributos finais e static e blocos de inicializacao.
 
 
 ## Funções do Caixa Eletrônico
