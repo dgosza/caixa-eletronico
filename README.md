@@ -22,6 +22,7 @@ Neste projeto, temos um simulador de caixa eletrônico com algumas funcoes, tais
 * Saldo
 * Saque
 * Transferência
+* Editar Dados
 
 ## Código e Documentação
 
