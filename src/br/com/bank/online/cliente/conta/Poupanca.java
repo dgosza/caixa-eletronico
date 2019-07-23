@@ -2,8 +2,6 @@ package br.com.bank.online.cliente.conta;
 
 import br.com.bank.online.Utilitarios;
 
-import java.util.Random;
-
 public class Poupanca extends Conta {
 
 

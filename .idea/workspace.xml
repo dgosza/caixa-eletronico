@@ -2,18 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c08c836-ce6b-48aa-9336-0d21563a2840" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Transferencia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/EditarDados.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Extrato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Saldo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Saque.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/Utilitarios.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/Utilitarios.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/cartao/Cartao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/cartao/Credito.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/cartao/Debito.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/conta/Conta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/conta/Conta.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/conta/Corrente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/conta/Corrente.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/conta/Poupanca.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/conta/Poupanca.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bank/online/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/Utilitarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bank/online/Utilitarios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Transferencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Transferencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Cartao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Credito.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Debito.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Corrente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Corrente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Poupanca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Poupanca.java" afterDir="false" />
     </list>
@@ -42,182 +50,70 @@
     <favorites_list name="CaixaEletronico" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.649375">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="182">
-                  <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#351#352#0" expanded="true" />
-                    <element signature="e#382#383#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/Cliente.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="536">
-                  <caret line="179" column="43" selection-start-line="179" selection-start-column="32" selection-end-line="179" selection-end-column="43" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#9194#9195#0" expanded="true" />
-                    <element signature="e#9266#9267#0" expanded="true" />
-                    <element signature="e#9322#9323#0" expanded="true" />
-                    <element signature="e#9390#9391#0" expanded="true" />
-                    <element signature="e#9444#9445#0" expanded="true" />
-                    <element signature="e#9508#9509#0" expanded="true" />
-                    <element signature="e#9568#9569#0" expanded="true" />
-                    <element signature="e#9644#9645#0" expanded="true" />
-                    <element signature="e#9704#9705#0" expanded="true" />
-                    <element signature="e#9780#9781#0" expanded="true" />
-                    <element signature="e#9854#9855#0" expanded="true" />
-                    <element signature="e#9958#9959#0" expanded="true" />
-                    <element signature="e#10035#10036#0" expanded="true" />
-                    <element signature="e#10144#10145#0" expanded="true" />
-                    <element signature="e#10222#10223#0" expanded="true" />
-                    <element signature="e#10332#10333#0" expanded="true" />
-                    <element signature="e#10410#10411#0" expanded="true" />
-                    <element signature="e#10520#10521#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/Transferencia.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/Utilitarios.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="585">
-                  <caret line="39" column="5" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="39" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Conta.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="520">
-                  <caret line="43" selection-start-line="43" selection-end-line="45" selection-end-column="71" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#303#304#0" expanded="true" />
-                    <element signature="e#372#373#0" expanded="true" />
-                    <element signature="e#1414#1415#0" expanded="true" />
-                    <element signature="e#1458#1459#0" expanded="true" />
-                    <element signature="e#2245#2246#0" expanded="true" />
-                    <element signature="e#2279#2280#0" expanded="true" />
-                    <element signature="e#3557#3558#0" expanded="true" />
-                    <element signature="e#3621#3622#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/Notas.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="initializer##0;class#Notas#0" />
-                    <element signature="method#notasDisponiveis#0;class#Notas#0" />
-                    <element signature="method#moedasDisponiveis#0;class#Notas#0" />
-                    <element signature="e#1672#2833#0" />
-                    <element signature="e#2839#3886#0" />
-                    <element signature="e#3892#5311#0" />
-                    <element signature="method#menu#0;class#Notas#0" />
-                    <element signature="e#7999#8000#0" expanded="true" />
-                    <element signature="e#8089#8090#0" expanded="true" />
-                    <element signature="e#8159#8160#0" expanded="true" />
-                    <element signature="e#8253#8254#0" expanded="true" />
-                    <element signature="e#8325#8326#0" expanded="true" />
-                    <element signature="e#8423#8424#0" expanded="true" />
-                    <element signature="e#8491#8492#0" expanded="true" />
-                    <element signature="e#8581#8582#0" expanded="true" />
-                    <element signature="e#8653#8654#0" expanded="true" />
-                    <element signature="e#8751#8752#0" expanded="true" />
-                    <element signature="e#8821#8822#0" expanded="true" />
-                    <element signature="e#8915#8916#0" expanded="true" />
-                    <element signature="e#8983#8984#0" expanded="true" />
-                    <element signature="e#9073#9074#0" expanded="true" />
-                    <element signature="e#9145#9146#0" expanded="true" />
-                    <element signature="e#9243#9244#0" expanded="true" />
-                    <element signature="e#9327#9328#0" expanded="true" />
-                    <element signature="e#9449#9450#0" expanded="true" />
-                    <element signature="e#9519#9520#0" expanded="true" />
-                    <element signature="e#9613#9614#0" expanded="true" />
-                    <element signature="e#9687#9688#0" expanded="true" />
-                    <element signature="e#9789#9790#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Corrente.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="237">
-                  <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#691#692#0" expanded="true" />
-                    <element signature="e#737#738#0" expanded="true" />
-                    <element signature="e#986#987#0" expanded="true" />
-                    <element signature="e#1030#1031#0" expanded="true" />
-                    <element signature="e#1096#1097#0" expanded="true" />
-                    <element signature="e#1143#1144#0" expanded="true" />
-                    <element signature="e#1200#1201#0" expanded="true" />
-                    <element signature="e#1250#1251#0" expanded="true" />
-                    <element signature="e#1328#1329#0" expanded="true" />
-                    <element signature="e#1387#1388#0" expanded="true" />
-                    <element signature="e#1443#1444#0" expanded="true" />
-                    <element signature="e#1495#1496#0" expanded="true" />
-                    <element signature="e#1574#1575#0" expanded="true" />
-                    <element signature="e#1637#1638#0" expanded="true" />
-                    <element signature="e#1686#1687#0" expanded="true" />
-                    <element signature="e#1731#1732#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Poupanca.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" selection-start-line="8" selection-end-line="8" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#475#476#0" expanded="true" />
-                    <element signature="e#522#523#0" expanded="true" />
-                    <element signature="e#1248#1249#0" expanded="true" />
-                    <element signature="e#1293#1294#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/Cliente.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#toString#0;class#Cliente#0" />
+                <element signature="method#validaCliente#0;class#Cliente#0" />
+                <element signature="e#2772#2773#0" expanded="true" />
+                <element signature="e#2799#2800#0" expanded="true" />
+                <element signature="e#2839#2840#0" expanded="true" />
+                <element signature="e#2871#2872#0" expanded="true" />
+                <element signature="e#2901#2902#0" expanded="true" />
+                <element signature="e#2927#2928#0" expanded="true" />
+                <element signature="e#2965#2966#0" expanded="true" />
+                <element signature="e#2995#2996#0" expanded="true" />
+                <element signature="e#3024#3025#0" expanded="true" />
+                <element signature="e#3049#3050#0" expanded="true" />
+                <element signature="e#3085#3086#0" expanded="true" />
+                <element signature="e#3113#3114#0" expanded="true" />
+                <element signature="e#3145#3146#0" expanded="true" />
+                <element signature="e#3173#3174#0" expanded="true" />
+                <element signature="e#3215#3216#0" expanded="true" />
+                <element signature="e#3249#3250#0" expanded="true" />
+                <element signature="e#3281#3282#0" expanded="true" />
+                <element signature="e#3309#3310#0" expanded="true" />
+                <element signature="e#3351#3352#0" expanded="true" />
+                <element signature="e#3385#3386#0" expanded="true" />
+                <element signature="e#3427#3428#0" expanded="true" />
+                <element signature="e#3463#3464#0" expanded="true" />
+                <element signature="e#3523#3524#0" expanded="true" />
+                <element signature="e#3573#3574#0" expanded="true" />
+                <element signature="e#3615#3616#0" expanded="true" />
+                <element signature="e#3651#3652#0" expanded="true" />
+                <element signature="e#3711#3712#0" expanded="true" />
+                <element signature="e#3761#3762#0" expanded="true" />
+                <element signature="e#3796#3797#0" expanded="true" />
+                <element signature="e#3826#3827#0" expanded="true" />
+                <element signature="e#3873#3874#0" expanded="true" />
+                <element signature="e#3911#3912#0" expanded="true" />
+                <element signature="e#3942#3943#0" expanded="true" />
+                <element signature="e#3970#3971#0" expanded="true" />
+                <element signature="e#4011#4012#0" expanded="true" />
+                <element signature="e#4045#4046#0" expanded="true" />
+                <element signature="e#4076#4077#0" expanded="true" />
+                <element signature="e#4104#4105#0" expanded="true" />
+                <element signature="e#4145#4146#0" expanded="true" />
+                <element signature="e#4179#4180#0" expanded="true" />
+                <element signature="e#4226#4227#0" expanded="true" />
+                <element signature="e#4262#4263#0" expanded="true" />
+                <element signature="e#4327#4328#0" expanded="true" />
+                <element signature="e#4377#4378#0" expanded="true" />
+                <element signature="e#4420#4421#0" expanded="true" />
+                <element signature="e#4454#4455#0" expanded="true" />
+                <element signature="e#4513#4514#0" expanded="true" />
+                <element signature="e#4559#4560#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -230,9 +126,15 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>resto</find>
+      <find>getContaPoupanca()</find>
+      <find>getContaCorrente()</find>
+      <find>getNome</find>
     </findStrings>
     <replaceStrings>
       <replace>valor</replace>
+      <replace>poupanca</replace>
+      <replace>corrente</replace>
+      <replace>nome</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -249,16 +151,19 @@
         <option value="$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Credito.java" />
         <option value="$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Debito.java" />
         <option value="$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Poupança.java" />
-        <option value="$PROJECT_DIR$/src/br/com/bank/online/cliente/Saque.java" />
         <option value="$PROJECT_DIR$/src/br/com/bank/online/Admin.java" />
         <option value="$PROJECT_DIR$/src/br/com/bank/online/Notas.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bank/online/Utilitarios.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Conta.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bank/online/Main.java" />
         <option value="$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Corrente.java" />
         <option value="$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Poupanca.java" />
-        <option value="$PROJECT_DIR$/src/br/com/bank/online/Main.java" />
-        <option value="$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Conta.java" />
-        <option value="$PROJECT_DIR$/src/br/com/bank/online/Utilitarios.java" />
-        <option value="$PROJECT_DIR$/src/br/com/bank/online/cliente/Cliente.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bank/online/cliente/Extrato.java" />
         <option value="$PROJECT_DIR$/src/br/com/bank/online/cliente/Transferencia.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bank/online/cliente/Saldo.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bank/online/cliente/Saque.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bank/online/cliente/EditarDados.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bank/online/cliente/Cliente.java" />
       </list>
     </option>
   </component>
@@ -282,7 +187,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -308,33 +212,18 @@
               <item name="online" type="462c0819:PsiDirectoryNode" />
               <item name="cliente" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CaixaEletronico" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CaixaEletronico" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="online" type="462c0819:PsiDirectoryNode" />
-              <item name="cliente" type="462c0819:PsiDirectoryNode" />
-              <item name="cartao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CaixaEletronico" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CaixaEletronico" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="online" type="462c0819:PsiDirectoryNode" />
-              <item name="cliente" type="462c0819:PsiDirectoryNode" />
-              <item name="conta" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563745943101" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563850213299" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -393,12 +282,14 @@
       <workItem from="1563495694941" duration="1301000" />
       <workItem from="1563504689466" duration="1909000" />
       <workItem from="1563555866380" duration="5882000" />
-      <workItem from="1563663333516" duration="28345000" />
+      <workItem from="1563663333516" duration="28916000" />
+      <workItem from="1563757023559" duration="3896000" />
+      <workItem from="1563839334601" duration="8673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75806000" />
+    <option name="totallyTimeSpent" value="88946000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -411,8 +302,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="50" y="0" width="1870" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49863014" visible="true" weight="0.12280702" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49863014" visible="true" weight="0.125" />
       <window_info id="Structure" order="1" sideWeight="0.50136983" side_tool="true" weight="0.14364035" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -421,7 +313,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50136983" side_tool="true" weight="0.14364035" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49945176" visible="true" weight="0.23591924" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49945176" weight="0.1455898" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -429,7 +321,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" x="50" y="214" width="864" height="563" id="Terminal" order="10" type="FLOATING" weight="0.20828906" />
+      <window_info anchor="bottom" x="1056" y="318" width="864" height="563" id="Terminal" order="10" type="FLOATING" weight="0.20828906" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50054824" side_tool="true" weight="0.22422954" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.19022317" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -486,28 +378,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Debito.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Credito.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Cartao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/Saque.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Debito.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Credito.java" />
+    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Cartao.java" />
     <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/util/Scanner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -525,20 +398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Poupanca.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#1248#1249#0" expanded="true" />
-            <element signature="e#1293#1294#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Override.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -548,137 +407,218 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/Notas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-450">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="initializer##0;class#Notas#0" />
-            <element signature="method#notasDisponiveis#0;class#Notas#0" />
-            <element signature="method#moedasDisponiveis#0;class#Notas#0" />
-            <element signature="e#1672#2833#0" />
-            <element signature="e#2839#3886#0" />
-            <element signature="e#3892#5311#0" />
-            <element signature="method#menu#0;class#Notas#0" />
+            <element signature="e#686#1262#0" />
+            <element signature="e#1268#1797#0" />
+            <element signature="e#6603#7932#0" />
+            <element signature="e#7969#7970#0" expanded="true" />
             <element signature="e#7999#8000#0" expanded="true" />
+            <element signature="e#8049#8050#0" expanded="true" />
             <element signature="e#8089#8090#0" expanded="true" />
+            <element signature="e#8128#8129#0" expanded="true" />
             <element signature="e#8159#8160#0" expanded="true" />
+            <element signature="e#8211#8212#0" expanded="true" />
             <element signature="e#8253#8254#0" expanded="true" />
+            <element signature="e#8293#8294#0" expanded="true" />
             <element signature="e#8325#8326#0" expanded="true" />
+            <element signature="e#8379#8380#0" expanded="true" />
             <element signature="e#8423#8424#0" expanded="true" />
+            <element signature="e#8461#8462#0" expanded="true" />
             <element signature="e#8491#8492#0" expanded="true" />
+            <element signature="e#8541#8542#0" expanded="true" />
             <element signature="e#8581#8582#0" expanded="true" />
+            <element signature="e#8621#8622#0" expanded="true" />
             <element signature="e#8653#8654#0" expanded="true" />
+            <element signature="e#8707#8708#0" expanded="true" />
             <element signature="e#8751#8752#0" expanded="true" />
+            <element signature="e#8790#8791#0" expanded="true" />
             <element signature="e#8821#8822#0" expanded="true" />
+            <element signature="e#8873#8874#0" expanded="true" />
             <element signature="e#8915#8916#0" expanded="true" />
+            <element signature="e#8953#8954#0" expanded="true" />
             <element signature="e#8983#8984#0" expanded="true" />
+            <element signature="e#9033#9034#0" expanded="true" />
             <element signature="e#9073#9074#0" expanded="true" />
+            <element signature="e#9113#9114#0" expanded="true" />
             <element signature="e#9145#9146#0" expanded="true" />
+            <element signature="e#9199#9200#0" expanded="true" />
             <element signature="e#9243#9244#0" expanded="true" />
+            <element signature="e#9289#9290#0" expanded="true" />
             <element signature="e#9327#9328#0" expanded="true" />
+            <element signature="e#9393#9394#0" expanded="true" />
             <element signature="e#9449#9450#0" expanded="true" />
+            <element signature="e#9488#9489#0" expanded="true" />
             <element signature="e#9519#9520#0" expanded="true" />
+            <element signature="e#9571#9572#0" expanded="true" />
             <element signature="e#9613#9614#0" expanded="true" />
+            <element signature="e#9654#9655#0" expanded="true" />
             <element signature="e#9687#9688#0" expanded="true" />
+            <element signature="e#9743#9744#0" expanded="true" />
             <element signature="e#9789#9790#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Corrente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
-            <element signature="e#1143#1144#0" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1250#1251#0" expanded="true" />
-            <element signature="e#1328#1329#0" expanded="true" />
-            <element signature="e#1387#1388#0" expanded="true" />
-            <element signature="e#1443#1444#0" expanded="true" />
-            <element signature="e#1495#1496#0" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
-            <element signature="e#1637#1638#0" expanded="true" />
-            <element signature="e#1686#1687#0" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Conta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="43" selection-start-line="43" selection-end-line="45" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#1414#1415#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#2245#2246#0" expanded="true" />
-            <element signature="e#2279#2280#0" expanded="true" />
-            <element signature="e#3557#3558#0" expanded="true" />
-            <element signature="e#3621#3622#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="179" column="43" selection-start-line="179" selection-start-column="32" selection-end-line="179" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9194#9195#0" expanded="true" />
-            <element signature="e#9266#9267#0" expanded="true" />
-            <element signature="e#9322#9323#0" expanded="true" />
-            <element signature="e#9390#9391#0" expanded="true" />
-            <element signature="e#9444#9445#0" expanded="true" />
-            <element signature="e#9508#9509#0" expanded="true" />
-            <element signature="e#9568#9569#0" expanded="true" />
-            <element signature="e#9644#9645#0" expanded="true" />
-            <element signature="e#9704#9705#0" expanded="true" />
-            <element signature="e#9780#9781#0" expanded="true" />
-            <element signature="e#9854#9855#0" expanded="true" />
-            <element signature="e#9958#9959#0" expanded="true" />
-            <element signature="e#10035#10036#0" expanded="true" />
-            <element signature="e#10144#10145#0" expanded="true" />
-            <element signature="e#10222#10223#0" expanded="true" />
-            <element signature="e#10332#10333#0" expanded="true" />
-            <element signature="e#10410#10411#0" expanded="true" />
-            <element signature="e#10520#10521#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/Utilitarios.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="39" selection-end-column="5" />
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Corrente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#1418#1419#0" expanded="true" />
+            <element signature="e#1456#1457#0" expanded="true" />
+            <element signature="e#1518#1519#0" expanded="true" />
+            <element signature="e#1576#1577#0" expanded="true" />
+            <element signature="e#1812#1813#0" expanded="true" />
+            <element signature="e#1875#1876#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Conta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#saqueConta#0;class#Conta#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Poupanca.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/Transferencia.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/EditarDados.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/Saque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/Extrato.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/Saldo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/Cliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#toString#0;class#Cliente#0" />
+            <element signature="method#validaCliente#0;class#Cliente#0" />
+            <element signature="e#2772#2773#0" expanded="true" />
+            <element signature="e#2799#2800#0" expanded="true" />
+            <element signature="e#2839#2840#0" expanded="true" />
+            <element signature="e#2871#2872#0" expanded="true" />
+            <element signature="e#2901#2902#0" expanded="true" />
+            <element signature="e#2927#2928#0" expanded="true" />
+            <element signature="e#2965#2966#0" expanded="true" />
+            <element signature="e#2995#2996#0" expanded="true" />
+            <element signature="e#3024#3025#0" expanded="true" />
+            <element signature="e#3049#3050#0" expanded="true" />
+            <element signature="e#3085#3086#0" expanded="true" />
+            <element signature="e#3113#3114#0" expanded="true" />
+            <element signature="e#3145#3146#0" expanded="true" />
+            <element signature="e#3173#3174#0" expanded="true" />
+            <element signature="e#3215#3216#0" expanded="true" />
+            <element signature="e#3249#3250#0" expanded="true" />
+            <element signature="e#3281#3282#0" expanded="true" />
+            <element signature="e#3309#3310#0" expanded="true" />
+            <element signature="e#3351#3352#0" expanded="true" />
+            <element signature="e#3385#3386#0" expanded="true" />
+            <element signature="e#3427#3428#0" expanded="true" />
+            <element signature="e#3463#3464#0" expanded="true" />
+            <element signature="e#3523#3524#0" expanded="true" />
+            <element signature="e#3573#3574#0" expanded="true" />
+            <element signature="e#3615#3616#0" expanded="true" />
+            <element signature="e#3651#3652#0" expanded="true" />
+            <element signature="e#3711#3712#0" expanded="true" />
+            <element signature="e#3761#3762#0" expanded="true" />
+            <element signature="e#3796#3797#0" expanded="true" />
+            <element signature="e#3826#3827#0" expanded="true" />
+            <element signature="e#3873#3874#0" expanded="true" />
+            <element signature="e#3911#3912#0" expanded="true" />
+            <element signature="e#3942#3943#0" expanded="true" />
+            <element signature="e#3970#3971#0" expanded="true" />
+            <element signature="e#4011#4012#0" expanded="true" />
+            <element signature="e#4045#4046#0" expanded="true" />
+            <element signature="e#4076#4077#0" expanded="true" />
+            <element signature="e#4104#4105#0" expanded="true" />
+            <element signature="e#4145#4146#0" expanded="true" />
+            <element signature="e#4179#4180#0" expanded="true" />
+            <element signature="e#4226#4227#0" expanded="true" />
+            <element signature="e#4262#4263#0" expanded="true" />
+            <element signature="e#4327#4328#0" expanded="true" />
+            <element signature="e#4377#4378#0" expanded="true" />
+            <element signature="e#4420#4421#0" expanded="true" />
+            <element signature="e#4454#4455#0" expanded="true" />
+            <element signature="e#4513#4514#0" expanded="true" />
+            <element signature="e#4559#4560#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

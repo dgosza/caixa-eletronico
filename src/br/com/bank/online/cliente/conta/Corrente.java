@@ -1,10 +1,6 @@
 package br.com.bank.online.cliente.conta;
 
-import br.com.bank.online.Main;
 import br.com.bank.online.Utilitarios;
-import br.com.bank.online.cliente.Cliente;
-
-import java.util.Random;
 
 public class Corrente extends Conta {
 

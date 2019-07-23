@@ -9,14 +9,10 @@ public class Main {
     //NUMERO DE CLIENTES PERMITIDOS NO SISTEMA
     static Cliente[] clientes = new Cliente[5];
 
-    //PROGRAMA INICIA JA COM UM CADASTRO, EVITANDO ASSIM O WORKFLOW REPETITIVO
+    //PROGRAMA INICIA JA COM DOIS CADASTROS, EVITANDO ASSIM O WORKFLOW REPETITIVO
     static {
         clientes[0] = new Cliente("diego", "diego", "diego");
         clientes[1] = new Cliente("nat", "nat", "nat");
-    }
-
-    public static Cliente[] getClientes() {
-        return clientes;
     }
 
     public static void main(String[] args) {
@@ -162,5 +158,9 @@ public class Main {
 
 
 
+    }
+
+    public static Cliente[] getClientes() {
+        return clientes;
     }
 }
