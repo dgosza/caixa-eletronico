@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c08c836-ce6b-48aa-9336-0d21563a2840" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/EditarDados.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Extrato.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Saldo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Saque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/Utilitarios.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/Utilitarios.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/cartao/Cartao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/cartao/Credito.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/cartao/Debito.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/conta/Conta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/conta/Conta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/conta/Corrente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/conta/Corrente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/conta/Poupanca.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaixaEletronico/br/com/bank/online/cliente/conta/Poupanca.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bank/online/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Transferencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/Transferencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Cartao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Credito.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/cliente/cartao/Debito.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Corrente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Corrente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Poupanca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bank/online/cliente/conta/Poupanca.java" afterDir="false" />
-    </list>
+    <list default="true" id="7c08c836-ce6b-48aa-9336-0d21563a2840" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/Cliente.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="222">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#toString#0;class#Cliente#0" />
@@ -187,6 +164,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -216,8 +195,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -285,11 +262,12 @@
       <workItem from="1563663333516" duration="28916000" />
       <workItem from="1563757023559" duration="3896000" />
       <workItem from="1563839334601" duration="8673000" />
+      <workItem from="1563850269308" duration="665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88946000" />
+    <option name="totallyTimeSpent" value="89611000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -304,7 +282,7 @@
     <frame x="50" y="0" width="1870" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49863014" visible="true" weight="0.125" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49863014" visible="true" weight="0.12609649" />
       <window_info id="Structure" order="1" sideWeight="0.50136983" side_tool="true" weight="0.14364035" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -321,7 +299,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" x="1056" y="318" width="864" height="563" id="Terminal" order="10" type="FLOATING" weight="0.20828906" />
+      <window_info active="true" anchor="bottom" x="1056" y="318" width="864" height="563" id="Terminal" order="10" type="FLOATING" visible="true" weight="0.20828906" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50054824" side_tool="true" weight="0.22422954" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.19022317" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -565,7 +543,7 @@
     <entry file="file://$PROJECT_DIR$/src/br/com/bank/online/cliente/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#toString#0;class#Cliente#0" />
